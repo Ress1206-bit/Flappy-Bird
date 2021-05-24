@@ -1,4 +1,3 @@
-// Around line 300 testing to see if score can be added by only position.
 let gameState = {
   score: 0
 }
