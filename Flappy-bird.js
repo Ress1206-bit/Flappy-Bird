@@ -1,5 +1,8 @@
 // Around line 300 testing to see if score can be added by only position.
-let x = 0.75;
+import { size, sizeElement } from './main.js';
+
+//const size = sizeHTML;
+let x = size;
 let gameState = {
   score: 0
 }
@@ -886,7 +889,7 @@ gameState.playButton.on('pointerup', () => {
           }
           if (gameState.cursors.up.isUp){
             gameState.bird.anims.play('fly');
-            gameState.bird.angle += .37
+            gameState.bird.angle += .37;
             
           } // -180 y velocity 60 x
           if (gameState.bird.angle > 30){
@@ -1156,7 +1159,7 @@ gameState.playButton.on('pointerup', () => {
   }
   }
   const config = {
-    width: 500*x, //500
+    width: 500*x, //500     IF YOU EVER WANT TO MAKE WIDTH BIGGER YOU MUST FIND A BACKGROUND THAT IS LONGER THAN CURRENT CLOUD BACKGROUND.
     height: 750*x, //750
     backgroundColor: 0x2196F3,
     physics: {
