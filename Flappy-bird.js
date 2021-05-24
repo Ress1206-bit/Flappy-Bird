@@ -816,6 +816,15 @@ gameState.playButton.on('pointerup', () => {
       gameState.OtherScoreText1 = this.add.text(7325, config.height / 2, ` ${Math.round(gameState.score)}`, {fontSize: 80, color: '#00008b'})
       gameState.OtherScoreText2 = this.add.text(7250, config.height / 2 + 120, `SCORE`, {fontSize: 80, color: '#00008b'});
       gameState.shift = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SHIFT);
+          
+          
+        // TOUCH SCREEN
+          
+       gameState.sky.setInteractive();
+      gameState.sky.on('pointerup', () => {
+        gameState.bird.setVelocityY(-235).setVelocityX(gameState.birdSpeed); //x is normally 110 y is -235
+        gameState.bird.angle = -10;
+      })
     
       
         }
