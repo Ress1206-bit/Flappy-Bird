@@ -5,6 +5,6 @@
     let size = parseFloat(sizeHTML)     //parseInt(sizeHTML.split("px")[0]);
     console.log(size);
     console.log(window.innerWidth)
-export { size, sizeElement };
+    export { size, sizeElement };
 
 
