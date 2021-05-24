@@ -1,5 +1,5 @@
 // Around line 300 testing to see if score can be added by only position.
-let x = 0.35;
+let x = 0.7;
 let gameState = {
   score: 0
 }
